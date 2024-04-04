@@ -6,7 +6,7 @@ async fn home() -> impl Responder {
 }
 #[post("/")]
 async fn create() -> impl Responder {
-    HttpResponse::Ok().body("Hello Friend")
+    HttpResponse::Ok().body("Hello  Friend")
 }
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
