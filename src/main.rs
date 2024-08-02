@@ -8,6 +8,10 @@ async fn home() -> impl Responder {
 async fn create() -> impl Responder {
     HttpResponse::Ok().body("Hola amigo")
 }
+#[get("/")]
+async fn create() -> impl Responder {
+    HttpResponse::Ok().body("Hola amigo")
+}
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| App::new().service(home).service(create))
